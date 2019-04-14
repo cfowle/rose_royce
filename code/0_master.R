@@ -9,3 +9,5 @@ library(stringr)
 library(tidyverse)
 
 setwd("~/code/rose-royce/code")
+
+source("1_import_data")
