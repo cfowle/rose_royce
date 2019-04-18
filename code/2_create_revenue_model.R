@@ -24,3 +24,8 @@ OSR2
 
 ##predict revenue for days carwash was closed
 closed$revenue_pred = predict(lin_mod, newdata = closed)
+
+rain_closure = closed %>%
+  filter(rain > 1)
+
+mean(rain_closure$revenue_pred, na.rm = TRUE)
